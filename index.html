@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <header>
   <div class="headcolor">
-    <h2>WOMEN'S MINISTRY<br>OF<br>XXXXXX CHURCH</h2>
+    <h2>Women's Ministry<br>Of<br>Spirit Church</h2>
   </div>
 </header>
 
@@ -20,10 +22,10 @@
 
   <form action="index.html" method="post">
     <div class="Regtitle">
-      <h1>Online Workshop Registration</h1>
+      <p><h1>Online Workshop Registration</h1></p>
     </div>
     <div class="instructions">
-      <p>Please complete the registration form below. Items marked with an * are required fields.</p>
+      <p>Please complete the registration form below. Items marked with an *  are required fields.</p>
     </div>
 
 
@@ -114,11 +116,15 @@
     <!----End of Lunch Block-->
 
 
-    <fieldset>
-      <!---CC Payment Block-->
-      <legend>Payment</legend>
+    <fieldset class = "formOfPayment">
+      <legend >Payment</legend>
 
       <div class="col-50">
+          <label>
+              <input type="checkbox" checked="none" name="check"> Pay by check
+              <h4>Send your payment to: <br>Spirit Church<br> Attention: Women's Ministry<br> 123 St.<br> Louisville, KY
+                402xx</h4>
+            </label>
         <label for="fname">Accepted Cards</label>
         <div class="icon-container">
           <i class="fa fa-cc-visa" style="color:navy;"></i>
@@ -142,11 +148,7 @@
         <label for="cvv"><div class="required-field">CVV</div></label>
         <input type="text" id="cvv" name="cvv" placeholder=""><br>
 
-        <label>
-          <input type="checkbox" checked="checked" name="check"> Pay by check
-          <h4>Send your payment to: <br>XXXXXX Church<br> Attention: Women's Ministry<br> 123 St.<br> Louisville, KY
-            402xx</h4>
-        </label>
+        
 
       </div>
       </div>
@@ -155,6 +157,7 @@
 
     <fieldset>
       <legend>Billing Address</legend>
+      <!---<input type="checkbox" name="sameadr"> Shipping address same as billing-->
       <div class="col-50">
 
         <div class="row">
@@ -184,10 +187,10 @@
 
 
       </div>
-      <label>
-        <!-- Not sure how to remove check in check box-->
-        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-      </label>
+      <!--<label>
+        
+        <input type="checkbox" name="sameadr"> Shipping address same as billing
+      </label>-->
       <input type="submit" value="Continue to checkout" class="btn">
   </form>
   </div>
